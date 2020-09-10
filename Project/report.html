@@ -13436,11 +13436,12 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> It will have</p>
+<p><strong>Answer:</strong> Additionally preprocessing remove the stopwords, converts all words to small caps, remove of symbols like "!" and all.</p>
+<p>Why we need to remove this is because :</p>
 <ol>
 <li>Stopwords- Which lead to unnecessary words for training</li>
 <li>Capatisation - For eg. "word" and "Word" will be considered as two words</li>
-<li>Removal of uncessary symbols like "!"</li>
+<li>Removal of uncessary symbols like "!" - It doesn't convey any meaning.</li>
 </ol>
 
 </div>
@@ -14673,8 +14674,8 @@ Billable seconds: 274
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Both the model have similar accuracy scores. I think RNN is better when it comes for sentiment analysis, due to its ability to remember the previous inputs so as to predict well.
-There is no need of parameter tuning in RNN, while XGBoost expects hyperparameter tuning for better performance.</p>
+<p><strong>Answer:</strong> Both the model have similar accuracy scores. RNN is better when it comes for sentiment analysis, due to its ability to remember the previous inputs so as to predict well.
+There is no need of hyperparameter tuning in RNN, while XGBoost expects hyperparameter tuning for better performance.</p>
 
 </div>
 </div>
